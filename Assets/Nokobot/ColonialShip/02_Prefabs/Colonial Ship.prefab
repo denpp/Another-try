@@ -1447,7 +1447,8 @@ Transform:
   m_LocalPosition: {x: 8.11462, y: 4.3461714, z: 6.9356346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7165124090170368168}
   m_Father: {fileID: 4816409469987462}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5203,7 +5204,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile1: {fileID: 4883118381347162373, guid: ac7ee34ee0906774aa6ded0cb4ae06d6, type: 3}
-  launchVelocity1: 6000
+  wave1Velocity: 750
+  shotsFired: 0
+  shotsFired2: 0
+  wave2Velocity: 0
+  minAngleY: 0
+  maxAngleY: 0
+  minAngleZ: 0
+  maxAngleZ: 0
+  minAngleY2: 0
+  maxAngleY2: 0
+  minAngleZ2: 0
+  maxAngleZ2: 0
+--- !u!1 &3413298692202186362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7165124090170368168}
+  - component: {fileID: 1943461142702603567}
+  m_Layer: 8
+  m_Name: Firepoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7165124090170368168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3413298692202186362}
+  m_LocalRotation: {x: 0.00000007546214, y: 0.00000003831313, z: 0.6427876, w: -0.7660445}
+  m_LocalPosition: {x: 2.199997, y: 0.5699997, z: -0.010582992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4884553838183314}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -85.998}
+--- !u!114 &1943461142702603567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3413298692202186362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2733470d219ba4cad3f7a3a70b6339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile2: {fileID: 8242199216634513481, guid: 86908d797bb36f9438414bc664a4ccf5, type: 3}
+  wave1Velocity: 9300
+  shotsFired: 3
+  shotsFired2: 20
+  wave2Velocity: 14000
+  minAngleY: 280
+  maxAngleY: 290
+  minAngleZ: 0
+  maxAngleZ: 6
+  minAngleY2: 271
+  maxAngleY2: 273
+  minAngleZ2: -2
+  maxAngleZ2: 6
 --- !u!1 &3541839831528330000
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,4 +5318,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 4883118381347162373, guid: 3812ff6d9d6afab419f25d66c5c5e820, type: 3}
-  launchVelocity: 3000
+  wave1Velocity: 750
+  shotsFired: 0
+  shotsFired2: 0
+  wave2Velocity: 1000
+  minAngleY: 0
+  maxAngleY: 0
+  minAngleZ: 0
+  maxAngleZ: 0
+  minAngleY2: 0
+  maxAngleY2: 0
+  minAngleZ2: 0
+  maxAngleZ2: 0
