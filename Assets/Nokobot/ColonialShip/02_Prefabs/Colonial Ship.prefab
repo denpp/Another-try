@@ -4440,7 +4440,8 @@ Transform:
   m_LocalPosition: {x: 8.114623, y: 4.346172, z: 13.202371}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5240026261766095962}
   m_Father: {fileID: 4816409469987462}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5204,18 +5205,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile1: {fileID: 4883118381347162373, guid: ac7ee34ee0906774aa6ded0cb4ae06d6, type: 3}
-  wave1Velocity: 750
-  shotsFired: 0
-  shotsFired2: 0
-  wave2Velocity: 0
-  minAngleY: 0
-  maxAngleY: 0
-  minAngleZ: 0
-  maxAngleZ: 0
-  minAngleY2: 0
-  maxAngleY2: 0
-  minAngleZ2: 0
-  maxAngleZ2: 0
+  wave1Velocity: 9300
+  shotsFired: 3
+  shotsFired2: 20
+  wave2Velocity: 14000
+  timeBetweenShots1: 2
+  timeBetweenShots2: 1
+  minAngleY: 280
+  maxAngleY: 290
+  minAngleZ: -3
+  maxAngleZ: 3
+  minAngleY2: 271
+  maxAngleY2: 273
+  minAngleZ2: -3
+  maxAngleZ2: 3
 --- !u!1 &3413298692202186362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,7 +5270,7 @@ MonoBehaviour:
   wave2Velocity: 14000
   minAngleY: 280
   maxAngleY: 290
-  minAngleZ: 0
+  minAngleZ: -2
   maxAngleZ: 6
   minAngleY2: 271
   maxAngleY2: 273
@@ -5318,15 +5321,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 4883118381347162373, guid: 3812ff6d9d6afab419f25d66c5c5e820, type: 3}
-  wave1Velocity: 750
-  shotsFired: 0
-  shotsFired2: 0
-  wave2Velocity: 1000
-  minAngleY: 0
-  maxAngleY: 0
+  wave1Velocity: 9300
+  shotsFired: 3
+  shotsFired2: 20
+  wave2Velocity: 14000
+  timeBetweenShots1: 2
+  timeBetweenShots2: 1
+  minAngleY: 280
+  maxAngleY: 290
+  minAngleZ: -5
+  maxAngleZ: 2
+  minAngleY2: 271
+  maxAngleY2: 273
+  minAngleZ2: 271
+  maxAngleZ2: 273
+--- !u!1 &7209067691767188544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5240026261766095962}
+  - component: {fileID: 8381389306418091161}
+  m_Layer: 8
+  m_Name: Firepoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5240026261766095962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209067691767188544}
+  m_LocalRotation: {x: 0.00000013112502, y: 0.000000012769008, z: 0.71422845, w: -0.6999127}
+  m_LocalPosition: {x: 2.230999, y: -2.5999997, z: -10.419001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4720110768453040}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.16}
+--- !u!114 &8381389306418091161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209067691767188544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839ae090dbcb43043b41d7e45b08ed4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile3: {fileID: 8242199216634513481, guid: 162f8c4da63f730499ebd79de57bcd96, type: 3}
+  wave3Velocity: 20000
+  shotsFired3: 10
+  shotsFired4: 10
+  wave4Velocity: 20000
+  timeBetweenShots3: 2
+  timeBetweenShots4: 2
+  minAngleY: 265
+  maxAngleY: 268
   minAngleZ: 0
   maxAngleZ: 0
-  minAngleY2: 0
-  maxAngleY2: 0
-  minAngleZ2: 0
-  maxAngleZ2: 0
+  minAngleY2: 265
+  maxAngleY2: 268
+  minAngleZ2: -2
+  maxAngleZ2: 2
+  timeWave1: 0
+  timeWave2: 0
