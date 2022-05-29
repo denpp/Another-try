@@ -13,6 +13,7 @@ public class LaunchProjectilee : MonoBehaviour
     public float wave4Velocity;
     public float timeBetweenShots3;
     public float timeBetweenShots4;
+    public LaunchProjectile launchProjectile;
 
     public float minAngleY;
     public float maxAngleY;
@@ -36,9 +37,16 @@ public class LaunchProjectilee : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeWave1 = GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().shotsFired * GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().timeBetweenShots1;
-        timeWave2 = GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().shotsFired2 * GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().timeBetweenShots2;
-        float  startWave3 = timeWave1 + timeWave2;
+       // timeWave1 = GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().shotsFired * GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().timeBetweenShots1;
+       // timeWave2 = GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().shotsFired2 * GameObject.Find("Firepoint").GetComponent<LaunchProjectile>().timeBetweenShots2;
+       // float  startWave3 = timeWave1 + timeWave2;
+
+        StartCoroutine(Example());
+        timeWave1 = launchProjectile.shotsFired * launchProjectile.timeBetweenShots1;
+        timeWave2 = launchProjectile.shotsFired2 * launchProjectile.timeBetweenShots2;
+        startWave3 = timeWave1 + timeWave2;
+
+
 
     }
 
@@ -49,26 +57,27 @@ public class LaunchProjectilee : MonoBehaviour
     }
 
 
-    IEnumerator Example()
-  {
-   WaitForSeconds wait = new WaitForSeconds(timeBetweenShots3);
- 
-   for(int i = 0; i < shotsFired3; i++) 
+   IEnumerator Example()
    {
+  
+      WaitForSeconds wait = new WaitForSeconds(timeBetweenShots3);
+ 
+      for(int i = 0; i < shotsFired3; i++) 
+      {
       FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY, maxAngleY), 0, 0))), startWave3, "Timer1"); 
       FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), startWave3, "Timer1");
  
       yield return wait; 
-   }
-    WaitForSeconds wait2 = new WaitForSeconds(timeBetweenShots4);
-    for(int i = 0; i < shotsFired4; i++) 
-   {
-      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY2, maxAngleY2), 0, Random.Range(minAngleZ2, maxAngleZ2)))), 60f, "Timer1"); 
-      FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), 60f, "Timer1");
+      }
+      WaitForSeconds wait2 = new WaitForSeconds(timeBetweenShots4);
+      for(int i = 0; i < shotsFired4; i++) 
+      {
+      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY2, maxAngleY2), 0, Random.Range(minAngleZ2, maxAngleZ2)))), 60f, "Timer2"); 
+      FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), 60f, "Timer2");
  
       yield return wait2; 
+      }
+
    }
-
-
-  }
+  
 }

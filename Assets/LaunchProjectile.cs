@@ -40,7 +40,7 @@ GameObject objectToSpawn;
  
   IEnumerator Example()
   {
-   WaitForSeconds wait = new WaitForSeconds(timeBetweenShots1);
+  WaitForSeconds wait = new WaitForSeconds(timeBetweenShots1);
  
    for(int i = 0; i < shotsFired; i++) 
    {

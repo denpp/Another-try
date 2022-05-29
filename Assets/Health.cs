@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
    public int maxHealth = 8;
    public int currentHealth; 
    public HealthbarScript healthBar;
-   
+   public int damage;
 
 
    void Start()
@@ -29,9 +29,13 @@ public class Health : MonoBehaviour
    }
    void OnCollisionEnter(Collision collisionInfo)
    {
-       if(collisionInfo.gameObject.tag =="Enemy"){
-           TakeDamage(1);
+       if(collisionInfo.gameObject.tag =="Enemy")
+       {
+           TakeDamage(damage);
        }
-       
+       if(collisionInfo.gameObject.tag =="Water")
+       {
+           TakeDamage(maxHealth);
+       }
    }
 }
