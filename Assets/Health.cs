@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
    public int currentHealth; 
    public HealthbarScript healthBar;
    public int damage;
+   [SerializeField] private AudioSource damageSoundEffect;
 
 
    void Start()
@@ -24,6 +25,7 @@ public class Health : MonoBehaviour
    void TakeDamage(int damage) 
    {
        currentHealth -= damage; 
+      
 
        healthBar.SetHealth(currentHealth);
    }
@@ -32,6 +34,7 @@ public class Health : MonoBehaviour
        if(collisionInfo.gameObject.tag =="Enemy")
        {
            TakeDamage(damage);
+            damageSoundEffect.Play();
        }
        if(collisionInfo.gameObject.tag =="Water")
        {

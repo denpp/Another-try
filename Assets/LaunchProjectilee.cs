@@ -15,17 +15,17 @@ public class LaunchProjectilee : MonoBehaviour
     public float timeBetweenShots4;
     public LaunchProjectile launchProjectile;
 
-    public float minAngleY;
-    public float maxAngleY;
+    public float minAngleY3;
+    public float maxAngleY3;
 
-    public float minAngleZ;
-    public float maxAngleZ;
+    public float minAngleZ3;
+    public float maxAngleZ3;
 
-    public float minAngleY2;
-    public float maxAngleY2;
+    public float minAngleY4;
+    public float maxAngleY4;
 
-    public float minAngleZ2;
-    public float maxAngleZ2;
+    public float minAngleZ4;
+    public float maxAngleZ4;
     private float timeWave1;
     private float timeWave2;
     public float startWave3;
@@ -64,7 +64,7 @@ public class LaunchProjectilee : MonoBehaviour
  
       for(int i = 0; i < shotsFired3; i++) 
       {
-      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY, maxAngleY), 0, 0))), startWave3, "Timer1"); 
+      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY3, maxAngleY3), 0, 0))), startWave3, "Timer1"); 
       FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), startWave3, "Timer1");
  
       yield return wait; 
@@ -72,7 +72,7 @@ public class LaunchProjectilee : MonoBehaviour
       WaitForSeconds wait2 = new WaitForSeconds(timeBetweenShots4);
       for(int i = 0; i < shotsFired4; i++) 
       {
-      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY2, maxAngleY2), 0, Random.Range(minAngleZ2, maxAngleZ2)))), 60f, "Timer2"); 
+      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY4, maxAngleY4), 0, Random.Range(minAngleZ4, maxAngleZ4)))), 60f, "Timer2"); 
       FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), 60f, "Timer2");
  
       yield return wait2; 

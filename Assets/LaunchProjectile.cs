@@ -8,12 +8,20 @@ public class LaunchProjectile : MonoBehaviour
 GameObject objectToSpawn;
     public GameObject projectile;
     public float wave1Velocity = 750f;
+    public float wave2Velocity;
+    public float wave3Velocity;
+
     public int shotsFired;
     public int shotsFired2;
-    public float wave2Velocity = 1000f;
-    public float timeBetweenShots1 = 2f;
-    public float timeBetweenShots2 = 1f;
+    public int shotsFired3;
+    public int shotsFired4;
     
+    
+    public float timeBetweenShots1;
+    public float timeBetweenShots2;
+    public float timeBetweenShots3;
+    public float timeBetweenShots4;
+
     public float minAngleY;
     public float maxAngleY;
 
@@ -25,6 +33,21 @@ GameObject objectToSpawn;
 
     public float minAngleZ2;
     public float maxAngleZ2;
+
+    public float minAngleY3;
+    public float maxAngleY3;
+
+    public float minAngleZ3;
+    public float maxAngleZ3;
+
+    public float minAngleY4;
+    public float maxAngleY4;
+
+    public float minAngleZ4;
+    public float maxAngleZ4;
+
+    [SerializeField] private AudioSource cannonSoundEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +69,7 @@ GameObject objectToSpawn;
    {
       FunctionTimer.Create(() => objectToSpawn = Instantiate(projectile, transform.position, Quaternion.Euler(Random.Range(minAngleY,maxAngleY ), 0, Random.Range(minAngleZ, maxAngleZ))), 2f, "Timer1"); 
       FunctionTimer.Create(() => objectToSpawn.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave1Velocity, 0)), 2f, "Timer1");
+      cannonSoundEffect.Play();
  
       yield return wait; 
    }
@@ -54,10 +78,19 @@ GameObject objectToSpawn;
    {
     FunctionTimer.Create(() => objectToSpawn = Instantiate(projectile, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY2, maxAngleY2), 0, Random.Range(minAngleZ2, maxAngleZ2)))), 2f, "Timer1"); 
     FunctionTimer.Create(() => objectToSpawn.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave2Velocity, 0)), 2f, "Timer1");
- 
+    cannonSoundEffect.Play();
     yield return wait2; 
    }
-
+   WaitForSeconds wait3 = new WaitForSeconds(timeBetweenShots3);
+ 
+    for(int i = 0; i < shotsFired3; i++) 
+    {
+    FunctionTimer.Create(() => objectToSpawn = Instantiate(projectile, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY3, maxAngleY3), 0, Random.Range(minAngleZ3, maxAngleZ3)))), 2f, "Timer1"); 
+    FunctionTimer.Create(() => objectToSpawn.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), 2f, "Timer1");
+    cannonSoundEffect.Play();
+ 
+    yield return wait3; 
+    }
 
   }
 }

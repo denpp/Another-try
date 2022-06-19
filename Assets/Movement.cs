@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     float turnSmoothVelocity;
 
     public Transform groundCheck;
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     public LayerMask groundMask;
     
@@ -55,6 +56,8 @@ public class Movement : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            jumpSoundEffect.Play();
+
         }
         
         velocity.y += gravity * Time.deltaTime;

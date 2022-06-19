@@ -5206,19 +5206,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile1: {fileID: 4883118381347162373, guid: ac7ee34ee0906774aa6ded0cb4ae06d6, type: 3}
   wave1Velocity: 9300
-  shotsFired: 3
-  shotsFired2: 20
   wave2Velocity: 14000
+  wave3Velocity: 22000
+  shotsFired: 3
+  shotsFired2: 10
+  shotsFired3: 20
+  shotsFired4: 0
   timeBetweenShots1: 2
   timeBetweenShots2: 1
+  timeBetweenShots3: 1
+  timeBetweenShots4: 0
   minAngleY: 280
   maxAngleY: 290
   minAngleZ: -3
   maxAngleZ: 3
-  minAngleY2: 271
-  maxAngleY2: 273
+  minAngleY2: 266
+  maxAngleY2: 269
   minAngleZ2: -3
   maxAngleZ2: 3
+  minAngleY3: 266
+  maxAngleY3: 269
+  minAngleZ3: -3
+  maxAngleZ3: 3
 --- !u!1 &3413298692202186362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,17 +5274,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile2: {fileID: 8242199216634513481, guid: 86908d797bb36f9438414bc664a4ccf5, type: 3}
   wave1Velocity: 9300
-  shotsFired: 3
-  shotsFired2: 20
   wave2Velocity: 14000
+  wave3Velocity: 22000
+  shotsFired: 3
+  shotsFired2: 10
+  shotsFired3: 20
+  shotsFired4: 0
+  timeBetweenShots1: 2
+  timeBetweenShots2: 1
+  timeBetweenShots3: 1
+  timeBetweenShots4: 0
   minAngleY: 280
   maxAngleY: 290
-  minAngleZ: -2
+  minAngleZ: -4
   maxAngleZ: 6
-  minAngleY2: 271
-  maxAngleY2: 273
-  minAngleZ2: -2
+  minAngleY2: 266
+  maxAngleY2: 269
+  minAngleZ2: -4
   maxAngleZ2: 6
+  minAngleY3: 266
+  maxAngleY3: 269
+  minAngleZ3: -4
+  maxAngleZ3: 6
+  minAngleY4: 0
+  maxAngleY4: 0
+  minAngleZ4: 0
+  maxAngleZ4: 0
 --- !u!1 &3541839831528330000
 GameObject:
   m_ObjectHideFlags: 0
@@ -5322,19 +5346,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 4883118381347162373, guid: 3812ff6d9d6afab419f25d66c5c5e820, type: 3}
   wave1Velocity: 9300
-  shotsFired: 3
-  shotsFired2: 20
   wave2Velocity: 14000
+  wave3Velocity: 22000
+  shotsFired: 3
+  shotsFired2: 10
+  shotsFired3: 20
+  shotsFired4: 0
   timeBetweenShots1: 2
   timeBetweenShots2: 1
+  timeBetweenShots3: 1
+  timeBetweenShots4: 0
   minAngleY: 280
-  maxAngleY: 290
+  maxAngleY: 288
   minAngleZ: -5
-  maxAngleZ: 2
-  minAngleY2: 271
-  maxAngleY2: 273
-  minAngleZ2: 271
-  maxAngleZ2: 273
+  maxAngleZ: 3
+  minAngleY2: 268
+  maxAngleY2: 271
+  minAngleZ2: -5
+  maxAngleZ2: 3
+  minAngleY3: 266
+  maxAngleY3: 269
+  minAngleZ3: -5
+  maxAngleZ3: 3
+  minAngleY4: 266
+  maxAngleY4: 269
+  minAngleZ4: 0
+  maxAngleZ4: 0
 --- !u!1 &7209067691767188544
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,18 +5418,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile3: {fileID: 8242199216634513481, guid: 162f8c4da63f730499ebd79de57bcd96, type: 3}
   wave3Velocity: 20000
-  shotsFired3: 10
+  shotsFired3: 20
   shotsFired4: 10
-  wave4Velocity: 20000
-  timeBetweenShots3: 2
+  wave4Velocity: 27000
+  timeBetweenShots3: 1
   timeBetweenShots4: 2
-  minAngleY: 265
-  maxAngleY: 268
-  minAngleZ: 0
-  maxAngleZ: 0
-  minAngleY2: 265
-  maxAngleY2: 268
-  minAngleZ2: -2
-  maxAngleZ2: 2
-  timeWave1: 0
-  timeWave2: 0
+  launchProjectile: {fileID: 0}
+  minAngleY3: 268
+  maxAngleY3: 274
+  minAngleZ3: -2
+  maxAngleZ3: 2
+  minAngleY4: 0
+  maxAngleY4: 0
+  minAngleZ4: 0
+  maxAngleZ4: 0
+  startWave3: 0
