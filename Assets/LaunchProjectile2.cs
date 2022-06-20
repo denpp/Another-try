@@ -6,25 +6,19 @@ public class LaunchProjectile2 : MonoBehaviour
 {
     GameObject objectToSpawn2;
     public GameObject projectile2;
-    public GameObject projectilewave4;
     public float wave1Velocity = 750f;
     public float wave2Velocity;
     public float wave3Velocity;
-    public float wave4Velocity;
-    public float wave5Velocity;
   
     public int shotsFired;
     public int shotsFired2;
     public int shotsFired3;
     public int shotsFired4;
-    public int shotsFired5;
-    
     
     public float timeBetweenShots1;
     public float timeBetweenShots2;
     public float timeBetweenShots3;
     public float timeBetweenShots4;
-    public float timeBetweenShots5;
 
     public float minAngleY;
     public float maxAngleY;
@@ -49,13 +43,6 @@ public class LaunchProjectile2 : MonoBehaviour
 
     public float minAngleZ4;
     public float maxAngleZ4;
-
-
-    public float minAngleY5;
-    public float maxAngleY5;
-
-    public float minAngleZ5;
-    public float maxAngleZ5;
 
     // Start is called before the first frame update
     void Start()
@@ -97,27 +84,6 @@ public class LaunchProjectile2 : MonoBehaviour
       FunctionTimer.Create(() => objectToSpawn2.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), 2f, "Timer1");
  
       yield return wait3;
-    }
-     WaitForSeconds wait4 = new WaitForSeconds(timeBetweenShots4);
- 
-    for(int i = 0; i < shotsFired4; i++) 
-    {
-    FunctionTimer.Create(() => objectToSpawn2 = Instantiate(projectilewave4, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY4, maxAngleY4), 0, Random.Range(minAngleZ4, maxAngleZ4)))), 2f, "Timer1"); 
-    FunctionTimer.Create(() => objectToSpawn2.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), 2f, "Timer1");
-    
- 
-    yield return wait4; 
-    }
-
-     WaitForSeconds wait5 = new WaitForSeconds(timeBetweenShots5);
- 
-    for(int i = 0; i < shotsFired5; i++) 
-    {
-    FunctionTimer.Create(() => objectToSpawn2 = Instantiate(projectilewave4, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY5, maxAngleY5), 0, Random.Range(minAngleZ5, maxAngleZ5)))), 2f, "Timer1"); 
-    FunctionTimer.Create(() => objectToSpawn2.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave5Velocity, 0)), 2f, "Timer1");
-    
- 
-    yield return wait5; 
     }
 
 

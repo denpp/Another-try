@@ -1477,7 +1477,7 @@ Transform:
   m_GameObject: {fileID: 1190134744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.49, y: 0.79, z: -2.68}
-  m_LocalScale: {x: 11.01655, y: 1, z: 10.529278}
+  m_LocalScale: {x: 12.601, y: 1, z: 11.945}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1598,14 +1598,6 @@ PrefabInstance:
       value: 0.012
       objectReference: {fileID: 0}
     - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: maxAngleY2
       value: 269
       objectReference: {fileID: 0}
@@ -1614,88 +1606,12 @@ PrefabInstance:
       value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleY4
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleY5
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ2
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ3
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ4
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ5
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleY4
-      value: 266
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleY5
-      value: 266
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ2
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ3
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ4
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ5
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: shotsFired2
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: shotsFired4
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: shotsFired5
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: wave2Velocity
       value: 18000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave4Velocity
-      value: 28000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave5Velocity
-      value: 30000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: projectilewave4
-      value: 
-      objectReference: {fileID: 8242199216634513481, guid: 236084118a5759946bb69d8bd240121f, type: 3}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1943461142702603567, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots5
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3541839831528330000, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: m_Name
@@ -1731,7 +1647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: maxAngleZ
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleY
@@ -1739,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleZ
-      value: -1
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: maxAngleY2
@@ -1750,56 +1666,16 @@ PrefabInstance:
       value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleY4
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleY5
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: maxAngleZ2
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ3
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ4
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ5
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleY2
       value: 267
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleY4
-      value: 266
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleY5
-      value: 266
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleZ2
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ3
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ4
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ5
-      value: -2
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: shotsFired
@@ -1814,14 +1690,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: shotsFired4
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: shotsFired5
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: wave1Velocity
       value: 9300
       objectReference: {fileID: 0}
@@ -1830,28 +1698,8 @@ PrefabInstance:
       value: 18000
       objectReference: {fileID: 0}
     - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave4Velocity
-      value: 28000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave5Velocity
-      value: 30000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: launchVelocity1
       value: 9300
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: projectilewave4
-      value: 
-      objectReference: {fileID: 8242199216634513481, guid: 236084118a5759946bb69d8bd240121f, type: 3}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417521959360628571, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots5
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: wave2
@@ -1871,7 +1719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: maxAngleZ
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleY
@@ -1890,47 +1738,15 @@ PrefabInstance:
       value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleY5
-      value: 269
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: maxAngleZ2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ3
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ5
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleY2
       value: 271
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleY5
-      value: 266
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: minAngleZ2
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ3
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ4
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ5
       value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
@@ -1943,14 +1759,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: shotsFired2
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: shotsFired4
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: shotsFired5
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
@@ -1970,33 +1778,13 @@ PrefabInstance:
       value: 18000
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave4Velocity
-      value: 28000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave5Velocity
-      value: 30000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: launchVelocity
       value: 9300
       objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: projectilewave4
-      value: 
-      objectReference: {fileID: 8242199216634513481, guid: 236084118a5759946bb69d8bd240121f, type: 3}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: cannonSoundEffect
       value: 
       objectReference: {fileID: 2076240825}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots4
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots5
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6066174073694390646, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: objectsToSpawn.Array.size
       value: 1
@@ -2018,45 +1806,13 @@ PrefabInstance:
       value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleY4
-      value: 275
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ3
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: maxAngleZ4
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleY4
-      value: 268
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ3
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: minAngleZ4
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: projectile3
       value: 
-      objectReference: {fileID: 8242199216634513481, guid: 162f8c4da63f730499ebd79de57bcd96, type: 3}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: wave4Velocity
-      value: 28000
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3575706600662532296, guid: c644b16fabfb3e142988166c3a4b7356, type: 3}
     - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: launchProjectile
       value: 
       objectReference: {fileID: 1192574592}
-    - target: {fileID: 8381389306418091161, guid: f855683b127eede4c9d170be2672ae27, type: 3}
-      propertyPath: timeBetweenShots4
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8702742383687124817, guid: f855683b127eede4c9d170be2672ae27, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.2039986
@@ -2175,9 +1931,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339663905}
-  - component: {fileID: 1339663906}
   m_Layer: 0
-  m_Name: Firepoint 4
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2198,37 +1953,6 @@ Transform:
   m_Father: {fileID: 2087320805}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1339663906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339663904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc2a31cd3d537e947b6d5a24eb49ad7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile4: {fileID: 8242199216634513481, guid: 162f8c4da63f730499ebd79de57bcd96, type: 3}
-  shotsFired4: 10
-  shotsFired5: 10
-  wave3Velocity: 20000
-  wave4Velocity: 28000
-  wave5Velocity: 30000
-  timeBetweenShots4: 1
-  timeBetweenShots5: 1
-  launchProjectile: {fileID: 1192574592}
-  minAngleY4: 269
-  maxAngleY4: 272
-  minAngleZ4: -3
-  maxAngleZ4: 2
-  minAngleY5: 266
-  maxAngleY5: 269
-  minAngleZ5: -3
-  maxAngleZ5: 2
-  startWave4: 0
-  startWave5: 0
 --- !u!1 &1445231786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,103 +1983,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1892527188
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1892527192}
-  - component: {fileID: 1892527191}
-  - component: {fileID: 1892527190}
-  - component: {fileID: 1892527189}
-  m_Layer: 0
-  m_Name: s
-  m_TagString: Water
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1892527189
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892527188}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1892527190
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892527188}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1892527191
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892527188}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1892527192
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892527188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.23, z: 0}
-  m_LocalScale: {x: 27.964, y: 1, z: 25.682}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2076240823 stripped
 GameObject:
