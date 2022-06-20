@@ -8,11 +8,12 @@ public class MainMenu : MonoBehaviour
 {
     public void Playgame()
     {
-        SceneManager.LoadScene("game", LoadSceneMode.Additive);
+        SceneManager.LoadScene("game");
     }
     public void QuitGame()
     {
         Application.Quit(); 
+        Debug.Log("Game Closed");
     }
      
 
