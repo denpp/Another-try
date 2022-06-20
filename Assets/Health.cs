@@ -38,7 +38,7 @@ public class Health : MonoBehaviour
        }
        if(collisionInfo.gameObject.tag =="Water")
        {
-           TakeDamage(maxHealth);
+           TakeDamage(damage);
        }
    }
 }
