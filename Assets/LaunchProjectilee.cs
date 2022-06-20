@@ -60,22 +60,22 @@ public class LaunchProjectilee : MonoBehaviour
    IEnumerator Example()
    {
   
-      WaitForSeconds wait = new WaitForSeconds(timeBetweenShots3);
+      WaitForSeconds wait3 = new WaitForSeconds(timeBetweenShots3);
  
       for(int i = 0; i < shotsFired3; i++) 
       {
       FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY3, maxAngleY3), 0, 0))), startWave3, "Timer1"); 
       FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), startWave3, "Timer1");
  
-      yield return wait; 
+      yield return wait3; 
       }
-      WaitForSeconds wait2 = new WaitForSeconds(timeBetweenShots4);
+      WaitForSeconds wait4 = new WaitForSeconds(timeBetweenShots4);
       for(int i = 0; i < shotsFired4; i++) 
       {
       FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY4, maxAngleY4), 0, Random.Range(minAngleZ4, maxAngleZ4)))), 60f, "Timer2"); 
       FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), 60f, "Timer2");
  
-      yield return wait2; 
+      yield return wait4; 
       }
 
    }
