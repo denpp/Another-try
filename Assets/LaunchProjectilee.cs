@@ -64,8 +64,8 @@ public class LaunchProjectilee : MonoBehaviour
  
       for(int i = 0; i < shotsFired3; i++) 
       {
-      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY3, maxAngleY3), 0, 0))), startWave3, "Timer1"); 
-      FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), startWave3, "Timer1");
+      FunctionTimer.Create(() => objectToSpawn3 = Instantiate(projectile3, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY3, maxAngleY3), 0, 0))), 30f, "Timer1"); 
+      FunctionTimer.Create(() => objectToSpawn3.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave3Velocity, 0)), 30f, "Timer1");
  
       yield return wait3; 
       }

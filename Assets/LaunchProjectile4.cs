@@ -77,16 +77,16 @@ public class LaunchProjectile4 : MonoBehaviour
  
       for(int i = 0; i < shotsFired4; i++) 
       {
-      FunctionTimer.Create(() => objectToSpawn4 = Instantiate(projectile4, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY4, maxAngleY4), 0, Random.Range(minAngleZ4, maxAngleZ4)))), startWave4, "Timer1"); 
-      FunctionTimer.Create(() => objectToSpawn4.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), startWave4, "Timer1");
+      FunctionTimer.Create(() => objectToSpawn4 = Instantiate(projectile4, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY4, maxAngleY4), 0, Random.Range(minAngleZ4, maxAngleZ4)))), 60f, "Timer1"); 
+      FunctionTimer.Create(() => objectToSpawn4.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave4Velocity, 0)), 60f, "Timer1");
  
       yield return wait4; 
       }
       WaitForSeconds wait5 = new WaitForSeconds(timeBetweenShots5);
       for(int i = 0; i < shotsFired5; i++) 
       {
-      FunctionTimer.Create(() => objectToSpawn4 = Instantiate(projectile4, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY5, maxAngleY5), 0, Random.Range(minAngleZ5, maxAngleZ5)))), startWave5, "Timer2"); 
-      FunctionTimer.Create(() => objectToSpawn4.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave5Velocity, 0)), startWave5, "Timer2");
+      FunctionTimer.Create(() => objectToSpawn4 = Instantiate(projectile4, transform.position, Quaternion.Euler(new Vector3(Random.Range(minAngleY5, maxAngleY5), 0, Random.Range(minAngleZ5, maxAngleZ5)))), 60f, "Timer2"); 
+      FunctionTimer.Create(() => objectToSpawn4.GetComponent<Rigidbody>().AddRelativeForce(new Vector3 (0, wave5Velocity, 0)), 60f, "Timer2");
  
       yield return wait5; 
       }

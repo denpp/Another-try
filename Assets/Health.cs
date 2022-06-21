@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-   public int maxHealth = 8;
+   public int maxHealth = 16;
    public int currentHealth; 
    public HealthbarScript healthBar;
    public int damage;
@@ -36,9 +36,12 @@ public class Health : MonoBehaviour
            TakeDamage(damage);
             damageSoundEffect.Play();
        }
-       if(collisionInfo.gameObject.tag =="Water")
+       if(collisionInfo.gameObject.tag =="Enemy")
        {
            TakeDamage(damage);
+           
        }
+       
    }
+
 }
