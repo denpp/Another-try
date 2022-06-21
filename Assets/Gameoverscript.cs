@@ -16,6 +16,7 @@ public class Gameoverscript : MonoBehaviour
     void Start()
     {
         gameOverMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
